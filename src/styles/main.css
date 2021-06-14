@@ -1,0 +1,365 @@
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'DM Sans', sans-serif;
+        scroll-behavior: smooth;
+        max-width: 100%;
+    }
+    
+    body {
+        background-color: #f4f4f4;
+    }
+    
+    a {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 80px;
+    }
+    
+    button a {
+        width: 50px;
+        height: 50px;
+    }
+    
+    p {
+        font-size: 0.9em;
+    }
+    
+    img:focus {
+        outline: 2px dashed orange;
+    }
+    
+    div:focus {
+        outline: 2px dashed orange;
+    }
+    
+    p:focus {
+        outline: 2px dashed orange;
+    }
+    
+    section:focus {
+        outline: 2px dashed orange;
+    }
+    
+    a:focus {
+        outline: 2px dashed orange;
+    }
+    
+    button:focus {
+        outline: 2px dashed orange;
+    }
+    
+    h2:focus {
+        outline: 2px dashed orange;
+    }
+    /* Skip to content button*/
+    
+    .skip-link {
+        position: absolute;
+        width: 130px;
+        text-decoration: none;
+        top: -100px;
+        left: 0;
+        background-color: #193aa7;
+        color: white;
+        padding: 10px 15px;
+        z-index: 100;
+    }
+    
+    .skip-link:focus {
+        top: 0;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 11vh;
+        width: 100%;
+        background-color: #0075E2;
+        position: sticky;
+    }
+    
+    .container {
+        margin: 0px 70px;
+    }
+    
+    button {
+        display: flex;
+        width: 130px;
+        height: 45px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 12px 20px;
+        background-color: #0075E2;
+        border-radius: 5px;
+        border: none;
+    }
+    
+    button:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 300ms ease-in-out;
+    }
+    
+    button a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 1.1em;
+    }
+    
+    #hamburger {
+        display: none;
+    }
+    
+    .nav-menu .close-button {
+        display: none;
+    }
+    
+    .topnav {
+        position: fixed;
+        z-index: 10;
+    }
+    
+    .topnav .top-logo img {
+        margin-left: 30px;
+        height: 60px;
+    }
+    
+    #myNav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-right: 40px;
+    }
+    
+    #myNav ul li {
+        padding: 7px 25px;
+    }
+    
+    #myNav ul li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .topnav .nav-menu ul li:hover {
+        background-color: rgb(58, 165, 236);
+        cursor: pointer;
+        transition: 400ms ease-in-out;
+    }
+    /*HERO SECTION*/
+    
+    .hero {
+        height: 280px;
+        padding: 170px 0 100px 0;
+        text-align: left;
+        font-size: 20px;
+        background-size: cover;
+        background-position-y: 80%;
+        background-image: url("/images/heros/hero-image.jpg");
+    }
+    
+    .hero .hero-text {
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 50vw;
+        margin-left: 40px;
+        font-size: 1.2em;
+        letter-spacing: -0.1mm;
+        border-radius: 5px;
+        color: #00407c;
+    }
+    /*CATALOG SECTION*/
+    
+    .section-title {
+        margin: 40px 0px;
+        font-size: 1.8em;
+        font-weight: 900;
+        text-align: center;
+        letter-spacing: -0.2mm;
+        color: #0075E2;
+    }
+    
+    #catalog-item {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .catalog-img {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .catalog-img img {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+    }
+    
+    #catalog #catalog-item .card {
+        padding: 20px;
+        border-radius: 8px;
+        background-color: white;
+    }
+    
+    #catalog #catalog-item .card:hover {
+        -webkit-box-shadow: 0px 0px 57px -20px rgb(194, 194, 194);
+        -moz-box-shadow: 0px 0px 57px -20px rgb(194, 194, 194);
+        box-shadow: 0px 0px 57px -20px rgb(194, 194, 194);
+        cursor: pointer;
+        transform: translateY(-5px);
+        transition: 300ms ease-in-out;
+    }
+    
+    .catalog-info .info-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0px;
+    }
+    
+    .catalog-info .info-wrapper .rating {
+        display: flex;
+        margin: 0px 10px;
+        align-items: center;
+    }
+    
+    #catalog-item .catalog-info .info-wrapper .resto-description {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+    
+    .icon {
+        margin-right: 8px;
+    }
+    
+    .tags {
+        padding: 7px 10px;
+        background-color: rgba(52, 106, 255, 0.8);
+        color: white;
+        border-radius: 5px;
+    }
+    
+    .catalog-info .resto-name {
+        font-weight: 800;
+        font-size: 1.3em;
+        letter-spacing: -0.2mm;
+    }
+    
+    footer {
+        background-color: #0075E2;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        bottom: 0;
+        color: white;
+    }
+    
+    @media screen and (max-width: 950px) {
+        #catalog-item {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+    @media screen and (max-width: 750px) {
+        .container {
+            margin: 0px 20px;
+        }
+        .hero {
+            height: 280px;
+            padding: 120px 0 100px 0;
+            text-align: left;
+            font-size: 17px;
+            background-size: cover;
+            background-position-y: 80%;
+            background-image: url("/images/heros/hero-image.jpg");
+        }
+    }
+    
+    @media screen and (max-width: 550px) {
+        #hamburger {
+            display: inline-block;
+            width: 55px;
+            height: 45px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .topnav {
+            position: fixed;
+            z-index: 10;
+        }
+        #myNav {
+            position: absolute;
+            width: 250px;
+            height: 100vh;
+            top: 0;
+            right: -500px;
+            transition: 0.3s ease-in-out;
+            background-color: rgb(30, 90, 255);
+        }
+        #myNav ul {
+            display: flex;
+            flex-direction: column;
+        }
+        #myNav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            justify-content: left;
+        }
+        .nav-menu .close-button {
+            margin: 20px 20px;
+        }
+        .top-logo img {
+            height: 47px;
+            margin-left: 10px;
+        }
+        .nav-menu .close-button {
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position-x: 40%;
+            background-image: url("/images/heros/hero-image.jpg");
+        }
+        .hero .hero-text {
+            width: 60vw;
+            padding: 30px;
+            text-align: left;
+            font-size: 0.9em;
+            margin-left: 0;
+        }
+        .container {
+            margin: 0px 25px;
+        }
+        #catalog-item {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr;
+        }
+        .catalog-img img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+    }
